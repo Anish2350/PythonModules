@@ -1,0 +1,6 @@
+print("Hello, Python!")
+print("Anish")
+print(Anish)
+print"Anish"
+print('Anish')
+print("Hello, Python!") print("Anish")
