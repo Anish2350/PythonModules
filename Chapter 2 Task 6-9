@@ -1,0 +1,30 @@
+#Practice1
+
+print("Tell me anything...") #this invokes the print function to display the argument
+anything = input() #this converts the console to input mode to allow user to input data, which is saved as a variable called 'anything'
+print("Hmm...", anything, "... Really?") #invokes the print function to display the arguments, value from the variable 'anything' and another argument
+
+#Practice2
+anything = float(input("Enter a number: ")) #first converts the number you enter as a string then converts to a float. So it doesn't matter if you first enter an integer or a float e.g. 2 or 2.0 both would work
+something = anything ** 2.0
+print(anything, "to the power of 2 is", something)
+
+#Practice3
+leg_a = float(input("Input first leg length: ")) #same as above: treats as a string then converts to a float
+leg_b = float(input("Input second leg length: "))
+hypo = (leg_a**2 + leg_b**2) ** .5
+print("Hypotenuse length is", hypo) #you can also remove the variable hypo and type the actual formula here instead
+
+
+#Task 6-9
+a = float(input("Let us assume the value of a is: ")) #data input by user is stored as variable 'a'
+b = float(input("And the value of b is: ")) #data input by use is stored as variable 'b'
+add = a + b #variable add is created that adds the above variables
+subtract_ab = a - b
+subtract_ba = b - a
+print("When a and b are added together, a + b = ", add, ".")
+print("When b is subtracted from a, a - b = ", subtract_ab, ".")
+print("When a is subtracted from b, b - a = ", subtract_ba, ".")
+print("When a and b are multiplied together, a * b = ", a * b, ".")
+print("When a is divided by b, a / b = ", a / b, ".")
+print("\nThat's all, folks!") #\n presents this display on next line
