@@ -1,0 +1,5 @@
+x = 2 #a variable named x is assigned a certain value here, in this case an integer
+x = float(x) #this converts the value to a float
+y = (3 * (x ** 3)) - (2 * (x ** 2)) + (3 * x) - 1
+#creating a variable named y and dividing the formula into smaller chunks using parenthesis for ease / understand to order it is processed
+print("y =", y)
