@@ -15,5 +15,5 @@ Euros = 87.0
 pound_to_euro = Pounds / 0.84 #0.84 Pounds = 1 Euro, so 1 Pound = 1/0.84 Euros
 euro_to_pound = Euros * 0.84 #1 Euro = 0.84 Pounds, so multiply by 0.84
 
-print (Pounds, "Pounds is", round(pound_to_euro, 2), "in Euros.")
+print (Pounds, "Pounds is", round(pound_to_euro, 2), "in Euros.") #print function is used to invoke / call to display
 print (Euros, "Euros is", round(euro_to_pound, 2), "in Pounds.")
