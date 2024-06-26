@@ -1,0 +1,19 @@
+kilometers = 12.25
+miles = 7.38
+
+miles_to_kilometers = miles * 1.61  #1 mile = 1.6km, so you multiply the mile by 1.61 to convert into km
+kilometers_to_miles = kilometers / 1.61 #similarly, 1.6km = 1 mile, or 1km=1/1.61 miles; hence you divide by 1.61
+
+print(miles, "miles is", round(miles_to_kilometers, 2), "kilometers") #miles here is variable, 'miles is' is string, round function rounds the result to 2 decimals after the point
+print(kilometers, "kilometers is", round(kilometers_to_miles, 2), "miles")
+
+#1 Euro is equivalent roughly to 0.84 Pounds
+
+Pounds = 55.55
+Euros = 87.0
+
+pound_to_euro = Pounds / 0.84 #0.84 Pounds = 1 Euro, so 1 Pound = 1/0.84 Euros
+euro_to_pound = Euros * 0.84 #1 Euro = 0.84 Pounds, so multiply by 0.84
+
+print (Pounds, "Pounds is", round(pound_to_euro, 2), "in Euros.")
+print (Euros, "Euros is", round(euro_to_pound, 2), "in Pounds.")
