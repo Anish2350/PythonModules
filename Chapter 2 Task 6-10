@@ -1,0 +1,14 @@
+x = float(input("Enter value for x: "))
+
+y = 1 / (x + (1 / (x + (1 / (x + (1 / x))))))
+
+print("y =", y)
+
+#worked backwards i.e. bottom to top or right to left
+#(1/x)
+#x+(1/x)
+#1/(x+(1/x))
+#x+(1/(x+(1/x)))
+#1/(x+(1/(x+(1/x))))
+#x+(1/(x+(1/(x+(1/x)))))
+#1/(x+(1/(x+(1/(x+(1/x))))))
