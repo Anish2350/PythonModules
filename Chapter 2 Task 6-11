@@ -1,0 +1,22 @@
+#Clock solution using the // and % to retrieve the hr and min separately
+
+hours = int(input("Start time (hours): "))
+mins = int(input("Start time (mins): "))
+duration = int(input("Meeting duration (mins): "))
+
+#convert everything into min first (steps 1 and 2)
+#step 1
+hours_min = hours * 60
+
+#step 2
+total_time_min = hours_min + mins + duration
+
+#Convert back to retrieve the hours and min bits separately
+#step 3
+hour = total_time_min // 60 #// only retrieves the quotient hence gets the hr
+
+#step 4
+Mins = total_time_min % 60 #% returns the remainder so gets the min
+
+
+print(hour, ":", Mins, sep="")
