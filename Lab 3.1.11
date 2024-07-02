@@ -1,0 +1,31 @@
+income = float(input("Enter the annual income: "))
+#this defines the variable income
+#which is a float and assigns it the value
+#input by the user
+
+if income < 85528:
+	tax = income * 0.18 - 556.02
+#this satisfies the first condition
+#and is given
+
+else:
+    tax = 14839.02 + (0.32 * (income - 85528))
+#this satisfies the second condition
+#and is executed if the above statement returns False
+#as its output
+
+tax = round(tax, 0)
+#variable tax calculated from either
+#of the above if / else statements
+#are rounded to 0 decimal place
+#i.e. whole number
+
+if tax < 0:
+    print("The tax is 0.0 thalers")
+#if value of variable tax is less than 0
+#you do not have to pay tax so you call the print function
+#to present this output
+#otherwise it will present negative tax value
+
+else:
+    print("The tax is:", tax, "thalers")
