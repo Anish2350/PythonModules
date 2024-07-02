@@ -1,0 +1,34 @@
+secret_number = 777
+
+print(
+"""
++================================+
+| Welcome to my game, muggle!    |
+| Enter an integer number        |
+| and guess what number I've     |
+| picked for you.                |
+| So, what is the secret number? |
++================================+
+""")
+
+guess = int(input("Make a guess: "))
+#this creates a variable guess that assigns
+#the it the value input by the user
+#and converts it into an integer
+#condition 1 satisified
+
+while guess != secret_number:
+    print("Ha ha! You're stuck in my loop!")
+    guess = int(input("Try again: "))
+#use the while keyword to create a loop
+#if the output is True i.e. if numbers don't match
+#executes line 21 and then 22
+    
+print(secret_number)
+#if the output on line 20 is False i.e. numbers match
+#it ignores the loop's body and jumps to line 27
+#gets out of the loop
+
+print("Well done, muggle! You are free now.")
+
+
