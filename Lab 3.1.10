@@ -1,0 +1,14 @@
+flower = input("Please enter a flower name you think your computer likes: ")
+#sets a variable flower that assigns it the value input by the user
+
+if flower == Spathiphyllum:
+  print("Yes - Spathiphyllum is the best plant ever!")
+  
+#condition 1 (Uppercase)- if this is true, execute line 5
+#otherwise if this is true (lowercase), execute line 9
+#if nothing is true jump to line 12
+
+elif flower == spathiphyllum:
+  print("No, I want a big Spathiphyllum!")
+else:
+  print("Spathiphyllum! Not " + flower + "!")
