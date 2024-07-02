@@ -1,0 +1,32 @@
+year = int(input("Enter a year: "))
+
+if year < 1582:
+	print("Not within the Gregorian calendar period")
+#compares the variable year with 1582
+#as soon as the year is anything before 1582
+#it displays the above result and stops executing further
+#if a valid year is entered, goes to line 10
+
+else:
+    if year % 4 != 0:
+        print("Common year.")
+#condition one
+#not divisible by 4
+#i.e. there is some remainder (rem != 0)
+
+    elif year % 100 != 0:
+        print("Leap year.")
+#condition two
+#not divisible by 100
+#i.e. there is some remainder (rem != 0)
+
+    elif year % 400 != 0:
+        print("Common year.")
+
+#condition three
+#not divisible by 400
+#i.e. there is some remainder (rem != 0)
+
+#if none of the above match, goes to the else condition below
+    else:
+        print("Leap year.")
