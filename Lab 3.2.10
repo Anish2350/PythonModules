@@ -1,0 +1,21 @@
+#The Ugly Vowel Eater lab
+#must use for loop, if-elif-else conditional execution
+#continue statement
+
+user_word = input("Enter a word: ") #prompTs the user to enter a word
+user_word = user_word.upper() #convertS the entered word to UPPERCASE
+
+for letter in user_word:
+    if letter == "A": #if it find the letter A it drops it and continues
+        continue
+    if letter == "E": #if it find the letter E it drops it and continues
+        continue
+    if letter == "I": #if it find the letter I it drops it and continues
+        continue
+    if letter == "O": #if it find the letter O it drops it and continues
+        continue
+    if letter == "U": #if it find the letter U it drops it and continues
+        continue
+    print(letter) #prints the final word as letter after dropping all the above
+    
+
