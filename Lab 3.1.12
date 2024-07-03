@@ -1,31 +1,44 @@
+#Calendar Lab to find whether a year is leap year or common year
+#conditions are:
+#if the year number isn't divisible by four, it's a common year;
+#otherwise, if the year number isn't divisible by 100, it's a leap year;
+#otherwise, if the year number isn't divisible by 400, it's a common year;
+#otherwise, it's a leap year.
+#warning if the year is anything before 1582 (Gregorian calendar introduced)
+
+#defines a variable year with value input by the user assigned to it
+
 year = int(input("Enter a year: "))
 
-if year < 1582:
-	print("Not within the Gregorian calendar period")
 #compares the variable year with 1582
 #as soon as the year is anything before 1582
 #it displays the above result and stops executing further
-#if a valid year is entered, goes to line 10
+#if a valid year is entered, i.e. result is False, goes to the else condition
 
-else:
-    if year % 4 != 0:
-        print("Common year.")
+if year < 1582:
+	print("Not within the Gregorian calendar period")
+
 #condition one
 #not divisible by 4
 #i.e. there is some remainder (rem != 0)
 
-    elif year % 100 != 0:
-        print("Leap year.")
+else:
+    if year % 4 != 0:
+        print("Common year.")
+
 #condition two
 #not divisible by 100
 #i.e. there is some remainder (rem != 0)
 
-    elif year % 400 != 0:
-        print("Common year.")
+    elif year % 100 != 0:
+        print("Leap year.")
 
 #condition three
 #not divisible by 400
 #i.e. there is some remainder (rem != 0)
+
+    elif year % 400 != 0:
+        print("Common year.")
 
 #if none of the above match, goes to the else condition below
     else:
