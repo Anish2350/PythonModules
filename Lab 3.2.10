@@ -16,6 +16,6 @@ for letter in user_word:
         continue
     elif letter == "U": #if it find the letter U it drops it and continues
         continue
-    print(letter) #prints the final word as letter after dropping all the above
+    print(letter) #prints the remaining letters after dropping all the above
     
 
