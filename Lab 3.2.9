@@ -1,0 +1,10 @@
+#Lab to stop a while loop using the break statement
+#loop to terminate when the secret word "chupacabra" is entered
+#this word must not be printed on the console at any time
+
+while True: #this sets an infinite loop
+    word = input("Guess the word: ") #gets the user to input value
+    if word == "chupacabra": #setting condition i.e. if true perform below steps. If False, ignores the below and goes on a loop again.
+        print("You've successfully left the loop.")
+        break #terminates the loop
+
