@@ -1,0 +1,17 @@
+#Collatz Hypothesis Lab
+
+c0 = int(input("Enter number: ")) #as stated save the input as c0
+
+steps = 0 #as total steps is required, some counter value is required
+
+while c0 != 1: #any number apart from 1
+    if c0 % 2 == 0: #check if it is even
+        c0 = round(c0 / 2, 0)
+        steps += 1 #add a step and execute line 15
+        
+    elif c0 % 2 != 0: #check if it is odd
+        c0 = 3 * c0 + 1
+        steps += 1 #add a step and execute line 15
+    print(c0)
+
+print ("Total steps=", steps)
