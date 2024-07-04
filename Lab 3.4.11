@@ -1,0 +1,30 @@
+#Beatles Lab to practice with lists
+
+beatles = [] # step 1 create an empty list
+print("Step 1:", beatles)
+
+# step 2 adds the element to the end of the list
+beatles.append("John Lennon")
+beatles.append("Paul McCartney")
+beatles.append("George Harrison")
+print("Step 2:", beatles)
+
+# step 3 range(2) is 0,1 i.e. two loops as two members to be added
+#user input is added to the end of the list
+for i in range(2):
+    beatles.append(input("Add Stue Sutcliffe and Pete Best: "))
+print("Step 3:", beatles)
+
+# step 4
+del beatles[4] #deletes the element at 4th index
+del beatles [3] #deleted the element at 3rd index
+print("Step 4:", beatles)
+
+# step 5
+beatles.insert(0, "Ringo Starr") #inserts the element at 0 index position i.e. at the beginning
+print("Step 5:", beatles)
+
+
+# testing list legth
+print("The Fab", len(beatles))
+
