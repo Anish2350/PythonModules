@@ -1,0 +1,16 @@
+#removing duplicate elements from the list
+
+my_list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
+
+new_list = [] #creating a new empty list as suggested by the question
+
+for i in my_list:
+    if i not in new_list: #if the element in my_list is not present in new_list perform the action
+        new_list.append(i) #adds the element to new_list only if not present
+
+#new_list is now the list with unique elements
+my_list = new_list[:] #copy all elements of new_list to my_list
+
+print("The list with unique elements only:")
+print(my_list)
+
