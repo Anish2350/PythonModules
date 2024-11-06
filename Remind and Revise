@@ -1,0 +1,23 @@
+
+listOne = [1,2,3,4,5,6,7,8,9] #I have created a list manually in this case
+
+while True: #this creates an infinite loop
+  user_word = input("Would you like to view (V) or change (C) the list?") #prompts the user to either input V to view OR C to change
+  user_word = user_word.upper() #takes the above input and converts it to capitals i.e. if the user entered c and NOT C, it would convert it to C
+
+  if user_word == "Q":
+      print("Thank you. See you later.")
+      break #breaks the loop and exits
+  elif user_word == "V":
+      print ("This is the current list: " , listOne)
+  elif user_word == "C":
+      print ("Current list is: " , listOne)
+      indexNum = int(input("Please input the index number (0-8): "))
+      newNum = int(input("Please enter the number you wish to change to: "))
+      listOne[indexNum] = newNum
+      print ("This is the updated list: " , listOne)
+  else:
+    print("Invalid option. Please enter either V to view, C to change or Q to quit.")
+      
+    
+    
